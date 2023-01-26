@@ -1,11 +1,13 @@
 ---
-title: "adithya-portfolio"
+image: "img/ProfilePhoto.jpg"
+about:
+  template: jolla
+  image-shape: round
+  image-width: 20em
+page-layout: full
+format:
+  html:
+    toc: true
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Hello World!!! This is my first blog page. I will populate my projects here.

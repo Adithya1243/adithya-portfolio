@@ -3,18 +3,37 @@ project:
   output-dir: docs
 
 website:
-  title: "adithya-portfolio"
+  title: "Adithya Parupudi"
+  
+  page-footer: 
+    left: "Copyright @ Adithya Parupudi" 
+    right: 
+      - icon: github
+        href: https://github.com/Adithya1243
+      - icon: twitter 
+        href: https://twitter.com/ 
+        
+  open-graph: true
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    background: "#00aec7"
+    pinned: true
+    search: true
+    right:
+      - text: "About"
+        href: about.qmd
+        
+      - text: "Projects"
+        href: projects.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    smooth-scroll: true # enabled smooth scrolling
+    theme: yeti
+    mainfont: "Atkinson Hyperlegible" # defined a style in .scss and used the name here
     toc: true
+    code-copy: true
+    code-overflow: wrap
+
 
 editor: visual
 

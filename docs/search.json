@@ -2,15 +2,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "adithya-portfolio",
+    "title": "Adithya Parupudi",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Hello World!!! This is my first blog page. I will populate my projects here."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Hello World",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "Hello World!!! This is my first blog page. I will populate my projects here."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Hello World",
+    "section": "",
+    "text": "Hello World!!! This is my first blog page. I will populate my projects here."
   }
 ]
