@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Adithya Parupudi"
+  favicon: img/favicon-star.png
   
   page-footer: 
     left: "Copyright @ Adithya Parupudi" 
@@ -19,8 +20,8 @@ website:
     pinned: true
     search: true
     right:
-      - text: "About"
-        href: about.qmd
+      - text: "Posts"
+        href: posts.qmd
         
       - text: "Projects"
         href: projects.qmd

@@ -9,9 +9,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Hello World",
+    "title": "Adithya Parupudi",
     "section": "",
-    "text": "Hello World!!! This is my first blog page. I will populate my projects here."
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nA reference to Git commands\n\n\n\nJan 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html",
@@ -19,5 +19,68 @@
     "title": "Hello World",
     "section": "",
     "text": "Hello World!!! This is my first blog page. I will populate my projects here."
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html",
+    "href": "posts/1_git_command_ref/git_command_ref.html",
+    "title": "Git Commands",
+    "section": "",
+    "text": "This document serves as a reference to common Git commands. I keep forgetting them constantly"
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html#rare-commands",
+    "href": "posts/1_git_command_ref/git_command_ref.html#rare-commands",
+    "title": "Git Commands",
+    "section": "Rare commands",
+    "text": "Rare commands\nUsed little less frequently.\n$ git commit -a This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.\n$ git rm [file] This command deletes the file from your working directory and stages the deletion.\n$ git log\nThis command is used to list the version history for the current branch.\n$ git branch -d [branch name]\nThis command deletes the branch in github website.\n$ git checkout [branch name]\nThis command is used to switch from one branch to another.\n$ git merge [branch name]\nThis command merges the specified branch’s history into the current branch."
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html#for-usual-activities",
+    "href": "posts/1_git_command_ref/git_command_ref.html#for-usual-activities",
+    "title": "Git Command Reference",
+    "section": "For usual activities",
+    "text": "For usual activities\n$ git init [repository name] This command is used to start a new repository.\nUsage: git clone [url] Example : git clone https://github.com/Adithya1243/googleDataAnalytics_capstone.git This command is used to obtain a repository from an existing URL.\nUsage: git add * This command adds one or more to the staging area.\nUsage: git commit -m “[ Type in the commit message]” This command records or snapshots the file permanently in the version history.\nUsage: git status This command lists all the files that have to be committed.\nUsage: git branch This command lists all the local branches in the current repository.\nUsage: git push [variable name] [branch] Example : git push origin default origin -> URL of git repo – https://github.com/Adithya1243/googleDataAnalytics_capstone.git default -> is the branch name This command sends the branch commits to your remote repository."
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html#special-errors",
+    "href": "posts/1_git_command_ref/git_command_ref.html#special-errors",
+    "title": "Git Commands",
+    "section": "Special Errors",
+    "text": "Special Errors\nunable to push using git lfs. Increase file limit to 500MB. It should work\n$ git config http.postBuffer 524288000"
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html#useful-links",
+    "href": "posts/1_git_command_ref/git_command_ref.html#useful-links",
+    "title": "Git Command Reference",
+    "section": "Useful links",
+    "text": "Useful links\nhttps://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html\nFor first time setup only\n$ git config –global user.name “[name]” $ git config –global user.email “[email address]”\nThis command sets the author name and email address respectively to be used with your commits."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Adithya Parupudi",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nA reference to Git commands\n\n\n\nJan 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html#for-first-time-setup-only",
+    "href": "posts/1_git_command_ref/git_command_ref.html#for-first-time-setup-only",
+    "title": "Git Commands",
+    "section": "For first time setup only",
+    "text": "For first time setup only\nRun the below lines in the terminal only during the initial setup Here ‘name’ represents the github username and ‘email’ represents your github email\n$ git config –global user.name “[name]”\n$ git config –global user.email “[email address]”\nThis command sets the author name and email address respectively to be used with your commits."
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html#for-regular-workflows",
+    "href": "posts/1_git_command_ref/git_command_ref.html#for-regular-workflows",
+    "title": "Git Commands",
+    "section": "For regular workflows",
+    "text": "For regular workflows\nAll the commands are self explanatory\n$ git init [repository name]  This command is used to start a new repository.\n$ git clone [url]  Example : git clone https://github.com/Adithya1243/googleDataAnalytics_capstone.git  This command is used to obtain a repository from an existing URL.\n$ git add *  This command adds one or more to the staging area.\n$ git commit -m “[ Type in the commit message]” This command records or snapshots the file permanently in the version history.\n$ git status This command lists all the files that have to be committed.\n$ git branch This command lists all the local branches in the current repository.\n$ git push [variable name] [branch]\nExample : git push origin default origin -> URL of git repo – https://github.com/Adithya1243/googleDataAnalytics_capstone.git default -> is the branch name This command sends the branch commits to your remote repository."
+  },
+  {
+    "objectID": "posts/1_git_command_ref/git_command_ref.html#references",
+    "href": "posts/1_git_command_ref/git_command_ref.html#references",
+    "title": "Git Commands",
+    "section": "References",
+    "text": "References\nhttps://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
   }
 ]
