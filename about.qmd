@@ -1,6 +1,0 @@
----
-title: "Hello World"
-image: "img/ProfilePhoto.jpg"
----
-
-Hello World!!! This is my first blog page. I will populate my projects here.
