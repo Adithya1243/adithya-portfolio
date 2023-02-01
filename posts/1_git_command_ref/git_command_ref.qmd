@@ -15,72 +15,57 @@ This document serves as a reference to common Git commands. I keep forgetting th
 
 ## For first time setup only
 
-Run the below lines in the terminal only during the initial setup
-Here 'name' represents the github username and 'email' represents your github email
+Run the below lines in the terminal only during the initial setup Here 'name' represents the github username and 'email' represents your github email
 
-$ git config –global user.name “[name]”  
-$ git config –global user.email “[email address]”
+\$ git config --global user.name "\[name\]"\
+\$ git config --global user.email "\[email address\]"
 
 This command sets the author name and email address respectively to be used with your commits.
-
 
 ## For regular workflows
 
 All the commands are self explanatory
 
-$ git init [repository name] <br>
-This command is used to start a new repository.
+\$ git init \[repository name\] <br> This command is used to start a new repository.
 
-$ git clone [url] <br>
-Example : git clone https://github.com/Adithya1243/googleDataAnalytics_capstone.git <br>
-This command is used to obtain a repository from an existing URL.
+\$ git clone \[url\] <br> Example : git clone https://github.com/Adithya1243/googleDataAnalytics_capstone.git <br> This command is used to obtain a repository from an existing URL.
 
-$ git add * <br>
-This command adds one or more to the staging area.<br>
+\$ git add \* <br> This command adds one or more to the staging area.<br>
 
-$ git commit -m “[ Type in the commit message]”<br>
-This command records or snapshots the file permanently in the version history.
+\$ git commit -m "\[ Type in the commit message\]"<br> This command records or snapshots the file permanently in the version history.
 
-$ git status<br>
-This command lists all the files that have to be committed.<br>
+\$ git status<br> This command lists all the files that have to be committed.<br>
 
-$ git branch<br>
-This command lists all the local branches in the current repository.
+\$ git branch<br> This command lists all the local branches in the current repository.
 
-$ git push [variable name] [branch]<br>
+\$ git push \[variable name\] \[branch\]<br>
 
-Example : git push origin default<br>
-origin -> URL of git repo -- https://github.com/Adithya1243/googleDataAnalytics_capstone.git<br>
-default -> is the branch name<br>
-This command sends the branch commits to your remote repository.<br>
+Example : git push origin default<br> origin -\> URL of git repo -- https://github.com/Adithya1243/googleDataAnalytics_capstone.git<br> default -\> is the branch name<br> This command sends the branch commits to your remote repository.<br>
 
 ## Rare commands
 
 Used little less frequently.
 
-$ git commit -a<br>
-This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.<br>
+\$ git commit -a<br> This command commits any files you've added with the git add command and also commits any files you've changed since then.<br>
 
-$ git rm [file]<br>
-This command deletes the file from your working directory and stages the deletion.<br>
+\$ git rm \[file\]<br> This command deletes the file from your working directory and stages the deletion.<br>
 
-$ git log  
+\$ git log\
 This command is used to list the version history for the current branch.
 
-$ git branch -d [branch name]  
+\$ git branch -d \[branch name\]\
 This command deletes the branch in github website.
 
-$ git checkout [branch name]  
+\$ git checkout \[branch name\]\
 This command is used to switch from one branch to another.
 
-$ git merge [branch name]  
-This command merges the specified branch’s history into the current branch.
+\$ git merge \[branch name\]\
+This command merges the specified branch's history into the current branch.
 
+## Special Errors
 
-##  Special Errors
-
-unable to push using git lfs. Increase file limit to 500MB. It should work  
-$ git config http.postBuffer 524288000
+unable to push using git lfs. Increase file limit to 500MB. It should work\
+\$ git config http.postBuffer 524288000
 
 ## References
 

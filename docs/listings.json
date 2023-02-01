@@ -8,7 +8,9 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/1_git_command_ref/git_command_ref.html"
+      "/posts/2_python_ref/python_ref.html",
+      "/posts/1_git_command_ref/git_command_ref.html",
+      "/posts/3_IntroToR_NIFTY50/3_nifty50.html"
     ]
   }
 ]
