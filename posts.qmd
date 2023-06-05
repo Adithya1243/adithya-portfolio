@@ -3,11 +3,12 @@ listing:
   contents: "posts/*/*.qmd"
   feed: true
   sort: "date desc"
-  type: grid
+  type: default
   categories: true
   sort-ui: true
   filter-ui: true
   fields: [image, date, title, description]
+  page-size: 10
 page-layout: full
 title-block-banner: true
 ---

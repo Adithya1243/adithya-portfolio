@@ -7,19 +7,21 @@ website:
   favicon: img/favicon-star.png
   
   page-footer: 
-    left: "Copyright @ Adithya Parupudi" 
-    right: 
-      - icon: github
-        href: https://github.com/Adithya1243
-      - icon: twitter 
-        href: https://twitter.com/ 
+    center: "Copyright @ Adithya Parupudi" 
+    # right: 
+    #   - icon: github
+    #     href: https://github.com/Adithya1243
+    #   - icon: twitter 
+    #     href: https://twitter.com/ 
         
   open-graph: true
   navbar:
-    background: "#00aec7"
     pinned: true
     search: true
     right:
+      - text: "Home"
+        href: index.qmd    
+    
       - text: "Posts"
         href: posts.qmd
         
@@ -28,12 +30,14 @@ website:
 
 format:
   html:
+    css:
+    - styles.css
     smooth-scroll: true # enabled smooth scrolling
-    theme: yeti
-    mainfont: "Atkinson Hyperlegible" # defined a style in .scss and used the name here
+    theme: lux
     toc: true
     code-copy: true
     code-overflow: wrap
+    include-in-header: assets/dependencies.html
 
 
 editor: visual
