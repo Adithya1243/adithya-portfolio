@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -58,11 +58,12 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
+
+<link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="">
-<meta property="og:description" content="Hello World!!! This is my first blog page. I will populate my projects here.">
-<meta property="og:image" content="img/ProfilePhoto.jpg">
 <meta property="og:site-name" content="Adithya Parupudi">
 </head>
 
@@ -83,10 +84,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html">Posts</a>
+    <a class="nav-link active" href="./index.html" aria-current="page">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html">Projects</a>
+    <a class="nav-link" href="./posts.html">
+ <span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html">
+ <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -101,16 +108,29 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <div class="quarto-about-jolla column-page">
-  <img src="img/ProfilePhoto.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
  <main class="content column-page" id="quarto-document-content">
-<p>Hello World!!! This is my first blog page. I will populate my projects here.</p>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async="" defer="" type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adithya-parupudi" data-version="v1">
-<a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/adithya-parupudi?trk=profile-badge">Adithya Praneeth Parupudi</a>
+<div class="intro-container">
+<img class="profile-image" src="img/ProfilePhoto.jpg" alt="Profile Photo">
+<div class="intro-text">
+<h1 class="intro-title">
+Adithya Praneeth Parupudi
+</h1>
+<h2 class="intro-subtitle">
+Masters in Data Analytics
+</h2>
+<p class="intro-description">
+Welcome! I’m a passionate data analyst, specializing in leveraging data to drive informed decision-making. With a strong foundation in statistics and expertise in Python, R, and SQL, Tableau and PowerBI, I enjoy applying my skills to real-world projects.
+</p>
+<p class="intro-contact">
+Let’s connect on <a href="https://www.linkedin.com/in/adithya-parupudi/" target="_blank">LinkedIn</a>, where we can discuss the possibilities of working together!
+</p>
+<!-- Resume button -->
+<a href="./img/Resume.pdf" class="resume-button" target="_blank">Download Resume</a>
+<div class="social-links">
+<!-- Social media links -->
+<p><a href="https://github.com/Adithya1243" target="_blank" class="social-link"> <i class="fab fa-github"></i> </a> <a href="https://www.linkedin.com/in/adithya-parupudi/" target="_blank" class="social-link"> <i class="fab fa-linkedin"></i> </a></p>
 </div>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="adithya-parupudi" data-version="v1">
-<a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/adithya-parupudi?trk=profile-badge">Adithya Praneeth Parupudi</a>
+</div>
 </div>
 
 
@@ -151,7 +171,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -187,47 +224,49 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright @ Adithya Parupudi</div>   
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Adithya1243">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/">
-      <i class="bi bi-twitter" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
+      <div class="nav-footer-center">Copyright @ Adithya Parupudi</div>
   </div>
 </footer>
 

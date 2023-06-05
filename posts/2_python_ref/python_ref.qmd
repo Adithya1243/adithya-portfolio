@@ -7,16 +7,13 @@ format:
   html:
     toc: true
 categories: [git] 
-image: "git.png"
+image: "Python_logo.png"
 image-alt: "Git logo"
 ---
 
 ## Important Numpy array facts
 
-Some important points about numpy arrays
-- numpy arrays and lists are same for 1-D.
-- numpy arrays are easier to write in 2-D
-- Operations on all elements are performed at once. Its called broadcasting.
+Some important points about numpy arrays - numpy arrays and lists are same for 1-D. - numpy arrays are easier to write in 2-D - Operations on all elements are performed at once. Its called broadcasting.
 
 add images here
 
@@ -28,12 +25,8 @@ here, the each element of random_list is an input parameter of function_name()
 
 ## MAGIC Commands = ipython utilities
 
-%timeit some_one_line_python_code
-gives time taken to execute it. 
+%timeit some_one_line_python_code gives time taken to execute it.
 
-%%timeit
-multiple_line_of_py-code
-multiple_line_of_py-code
-multiple_line_of_py-code
+%%timeit multiple_line_of_py-code multiple_line_of_py-code multiple_line_of_py-code
 
 used for multiple lines
