@@ -3,18 +3,42 @@ project:
   output-dir: docs
 
 website:
-  title: "adithya-portfolio"
+  title: "Adithya Parupudi"
+  favicon: img/favicon-star.png
+  
+  page-footer: 
+    center: "Copyright @ Adithya Parupudi" 
+    # right: 
+    #   - icon: github
+    #     href: https://github.com/Adithya1243
+    #   - icon: twitter 
+    #     href: https://twitter.com/ 
+        
+  open-graph: true
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    pinned: true
+    search: true
+    right:
+      - text: "Home"
+        href: index.qmd    
+    
+      - text: "Posts"
+        href: posts.qmd
+        
+      - text: "Projects"
+        href: projects.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    css:
+    - styles.css
+    smooth-scroll: true # enabled smooth scrolling
+    theme: lux
     toc: true
+    code-copy: true
+    code-overflow: wrap
+    include-in-header: assets/dependencies.html
+
 
 editor: visual
 
